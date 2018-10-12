@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHEETAH SHOES ADMIN</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <div id="mobil">
+    <h1>CHEETAH SHOES</h1>
+    <p>Thank you for visiting our mobile site! Unfortunately it is still a work in progress. Meanwhile, please visit our desktop page. <br/> Stay tuned and keep your feet running!<br/>-The Cheetah Shoes team</p>
+    <div id="mobil-logo" src="../images/logo.png"></div>
+  </div>
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"><a href="../index.html"><img id="logo" src="../images/logo.png"></a></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="../aboutcheetah.html>ABOUT CHEETAH</a>
+        <a class="mdl-navigation__link" href="../ladies.html">LADIES</a>
+        <a class="mdl-navigation__link" href="../gentlemen.html">GENTLEMEN</a>
+        <a class="mdl-navigation__link" href="../contactus.html">CONTACT US</a>
+        <!--Søgning-->
+        <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                 <div class="mdl-textfield__expandable-holder">
+                <input class="mdl-textfield__input" type="text" id="sample6">
+                <label class="mdl-textfield__label" for="sample-expandable"></label>
+            </div>
+                <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+                    <i class="material-icons">search</i>
+                </label>
+            </div>
+        </form>
+        <!--Indkøbskurv-->
+        <a href="../cart.html"><i class="material-icons">shopping_cart</i></a>
+      </nav>
+    </div>
+  </header>
+    <div id="maria">
+        <div style="padding: 5px 0px 0px 5px">
+            <h4>Create</h4>
+            <br>
+            <div>
+                <label>Brand: <input id="cBrand" value="Cheetah Shoes"></label>
+                <label>Model: <input id="cModel"></label>
+                <label>Price: <input id="cPrice" type="number" min="1"></label>
+                <label>Description: <input id="cDescription"></label>
+                <label>Gender: <select id="cGender">
+                    <option value="Male">MALE</option>
+                    <option value="Female">FEMALE</option>
+                </select></label>
+                <label>URL:<input id="cURL"></label>
+                <button id="createShoe-button">CREATE SHOE</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="table">
+            <table id="shoe-table" class="table">
+                <thead>
+                <tr>
+                    <th >ID</th>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Price</th>
+                    <th>Gender</th>
+                    <th>Description</th>
+                    <th>Sizes</th>
+                    <th>Options</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="admin-prev-next">
+            <button id="prev-button" >Prev</button>
+            <button id="next-button">Next</button>
+            <button id="loadAllShoes-button">Load all shoes</button>
+        </div>
+    </div>
+    <div id="maria">
+    <h4>EDIT SHOE</h4>
+           
+            <div id="editDiv">
+              <label>ID: <input id="editID" type="number" min="1" max="99999"><button id="editShoe-button">EDIT SHOE</button> </label>
+            </div>
+    </div>
+
+<footer id="admin-footer">
+     <div class="area1">
+        <h4>SUPPORT AREA</h4>
+        <ul>
+        <li><a href="terms.html">TERMS</a></li>
+        <li><a href="return.html">RETURNS</a></li>
+        <li><a href="mailto:info@gabemedia.net">EMAIL US</a></li>
+        </ul>
+     </div>
+     <div class="area2">
+         <h4>PRESS</h4>
+         <ul>
+        <li><a href="aboutcheetah.html">OUR FIRM</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="jobs.html">JOBS</a></li>
+        </ul>
+     </div> 
+     <div class="area3">
+         <h4>CONTACT</h4>
+         <ul>
+        <li><a href="tel:+4540380000">+45 40 38 00 00</a></li>
+        <li><a href="#">facebook.com/cheetahshoes</a></li>
+        <li><a href="#">instagram.com/cheetahshoes</a></li>
+        </ul>
+     </div>
+     <div class="area4">
+         <h4>INFORMATION</h4>
+        <ul>
+        <li><b><a href="AdminPageCheetahShoes/main.html">CHEETAH SHOES</a></b></li>
+        <li>FYNSGADE 33</li>
+        <li>9000 AALBORG</li>
+        </ul>
+     </div> 
+    </footer>
+</body>
+</html>
